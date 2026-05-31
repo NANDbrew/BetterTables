@@ -29,6 +29,7 @@ namespace BetterTables
                         oldThing.size = newThing.size;
                         oldThing.center = newThing.center;
                         GameObject.Destroy(newThing.gameObject);
+                        Debug.Log("BT: adjusted item: " + oldThing.name);
                     }
                     catch { Debug.LogError("BetterTables: couldn't load asset for item " + indices[i]); }
                 }
