@@ -85,7 +85,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddShopItems.cs" />
     <Compile Include="AssetTools.cs" />
+    <Compile Include="AutoLevel.cs" />
     <Compile Include="Patches.cs" />
     <Compile Include="Plugin.cs" />
   </ItemGroup>

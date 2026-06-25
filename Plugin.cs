@@ -1,8 +1,10 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
 using HarmonyLib;
-using System;
+using System.Collections.Generic;
 using System.Reflection;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace BetterTables
 {
@@ -15,6 +17,8 @@ namespace BetterTables
         public const string PLUGIN_VERSION = "0.0.1";
 
         public static Plugin instance { get; private set; }
+        internal static GameObject table1;
+        internal static GameObject table2;
 
         //--settings--
         //internal ConfigEntry<bool> someSetting;
@@ -25,6 +29,7 @@ namespace BetterTables
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), PLUGIN_ID);
             AssetTools.LoadAssetBundles();
 
+            SceneManager.sceneLoaded += AddShopItems.SceneLoaded;
             //someSetting = Config.Bind("Settings", "Some setting", false);
         }
     }
