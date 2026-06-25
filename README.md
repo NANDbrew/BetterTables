@@ -1,4 +1,7 @@
 ﻿# BetterTables
+Improves colliders for several furniture items. 
+Improves "on floor" detection when nailing items down with a hammer.
+
 **Added items:**
 - table M S
 - table M S 1
