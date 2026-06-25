@@ -14,7 +14,7 @@ namespace BetterTables
     {
         public const string PLUGIN_ID = "com.nandbrew.bettertables";
         public const string PLUGIN_NAME = "BetterTables";
-        public const string PLUGIN_VERSION = "0.0.1";
+        public const string PLUGIN_VERSION = "0.1.0";
 
         public static Plugin instance { get; private set; }
         internal static GameObject table1;
